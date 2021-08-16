@@ -1,8 +1,4 @@
 import './style.scss'
+import { initialize } from './landing.js'
 
-window.onload = () => {
-    homepage();
-}
-export const homepage = () => {
-    
-}
+initialize();

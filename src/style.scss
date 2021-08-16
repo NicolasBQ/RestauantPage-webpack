@@ -1,5 +1,156 @@
+$text: #D2E603;
+$typo: 'Neucha';
+$medium: 800px;
+
+@mixin medium {
+    @media(min-width: #{$medium}) {
+        @content
+    }
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+#content {
+    height: 100vh;
+    background-image: url(../../../images/Banner.png);
+}
+
+header {
+    nav {
+        height: 60px;
+        width: 100%;
+        display: flex;
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(0,0,0,.8);
+
+        h1 {
+            position: absolute;
+            left: 1rem;
+            top: .7rem;
+            color: $text;
+            font-family: $typo;
+            letter-spacing: .6rem;
+            font-size: 2rem;
+        }
+        
+        .toggleBtn {
+            display: flex;
+            flex-direction: column;
+            position: absolute;
+            right: 1rem;
+            top: .8rem;
+            height: 25px;
+            width: 25px;
+
+            span {
+                height: 3px;
+                margin-top: 5px;
+                width: 25px;
+                background-color: $text;
+            }
+        }
+        .nav-links {
+            display: none;
+        }
+        .nav-links.active {
+            display: block;
+            position: absolute;
+            top: 3.75rem;
+            width: 100%;
+            text-align: end;
+            background-color: rgba(0,0,0,.8);
+            li {
+                list-style-type: none;
+                margin: 20px 20px;
+                color: $text;
+                font-family: $typo;
+                font-size: 1.3rem;
+                font-weight: bold;
+            }
+        }
+    }
+    @include medium {
+        nav {
+            flex-direction: row;
+            justify-content: space-between;
+
+            .toggleBtn {
+                display: none;
+            }
+            .nav-links {
+                display: flex;
+                position: absolute;
+                right: 1rem;
+                
+                li {
+                    list-style-type: none;
+                    margin: 0 10px;
+                    font-family: $typo;
+                    font-size: 1.3rem;
+                    color: $text;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+
+main {
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    .message-container {
+        height: 350px;
+        width: 320px;
+        background-color: rgba(0,0,0,.3);
+
+        h1 {
+            text-align: center;
+            color: $text;
+            font-size: 3rem;
+            font-family: $typo;
+            font-weight: bold;
+            padding: 1rem;
+        }
+
+        button {
+            height: 50px;
+            width: 120px;
+            margin: 40px 30%;
+            background-color: $text;
+            border: none;
+            border-radius: 50px;
+            font-family: $typo;
+            font-size: 1rem;
+            font-weight: 500;
+            letter-spacing: .2rem;
+            cursor: pointer;
+        }
+    }
+    @include medium {
+        justify-content: flex-start;
+        margin-left: 100px;
+
+        .message-container {
+            height: 420px;
+            width: 400px;
+
+            h1 {
+                font-size: 4rem;
+            }
+            button {
+                height: 60px;
+                width: 150px;
+                margin: 40px 30%;
+                font-size: 1.3rem;
+            }
+        }
+    }
 }

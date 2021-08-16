@@ -16,12 +16,17 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0__);
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/api.js */ "./node_modules/css-loader/dist/runtime/api.js");
 /* harmony import */ var _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1__);
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../node_modules/css-loader/dist/runtime/getUrl.js */ "./node_modules/css-loader/dist/runtime/getUrl.js");
+/* harmony import */ var _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2__);
 // Imports
 
 
+
+var ___CSS_LOADER_URL_IMPORT_0___ = new URL(/* asset import */ __webpack_require__(/*! ../../../images/Banner.png */ "../../images/Banner.png"), __webpack_require__.b);
 var ___CSS_LOADER_EXPORT___ = _node_modules_css_loader_dist_runtime_api_js__WEBPACK_IMPORTED_MODULE_1___default()((_node_modules_css_loader_dist_runtime_cssWithMappingToString_js__WEBPACK_IMPORTED_MODULE_0___default()));
+var ___CSS_LOADER_URL_REPLACEMENT_0___ = _node_modules_css_loader_dist_runtime_getUrl_js__WEBPACK_IMPORTED_MODULE_2___default()(___CSS_LOADER_URL_IMPORT_0___);
 // Module
-___CSS_LOADER_EXPORT___.push([module.id, "", "",{"version":3,"sources":[],"names":[],"mappings":"","sourceRoot":""}]);
+___CSS_LOADER_EXPORT___.push([module.id, "* {\n  margin: 0;\n  padding: 0;\n  box-sizing: border-box;\n}\n\n#content {\n  height: 100vh;\n  background-image: url(" + ___CSS_LOADER_URL_REPLACEMENT_0___ + ");\n}\n\nheader nav {\n  height: 60px;\n  width: 100%;\n  display: flex;\n  position: relative;\n  flex-direction: column;\n  align-items: center;\n  background-color: rgba(0, 0, 0, 0.8);\n}\nheader nav h1 {\n  position: absolute;\n  left: 1rem;\n  top: 0.7rem;\n  color: #D2E603;\n  font-family: \"Neucha\";\n  letter-spacing: 0.6rem;\n  font-size: 2rem;\n}\nheader nav .toggleBtn {\n  display: flex;\n  flex-direction: column;\n  position: absolute;\n  right: 1rem;\n  top: 0.8rem;\n  height: 25px;\n  width: 25px;\n}\nheader nav .toggleBtn span {\n  height: 3px;\n  margin-top: 5px;\n  width: 25px;\n  background-color: #D2E603;\n}\nheader nav .nav-links {\n  display: none;\n}\nheader nav .nav-links.active {\n  display: block;\n  position: absolute;\n  top: 3.75rem;\n  width: 100%;\n  text-align: end;\n  background-color: rgba(0, 0, 0, 0.8);\n}\nheader nav .nav-links.active li {\n  list-style-type: none;\n  margin: 20px 20px;\n  color: #D2E603;\n  font-family: \"Neucha\";\n  font-size: 1.3rem;\n  font-weight: bold;\n}\n@media (min-width: 800px) {\n  header nav {\n    flex-direction: row;\n    justify-content: space-between;\n  }\n  header nav .toggleBtn {\n    display: none;\n  }\n  header nav .nav-links {\n    display: flex;\n    position: absolute;\n    right: 1rem;\n  }\n  header nav .nav-links li {\n    list-style-type: none;\n    margin: 0 10px;\n    font-family: \"Neucha\";\n    font-size: 1.3rem;\n    color: #D2E603;\n    cursor: pointer;\n  }\n}\n\nmain {\n  margin-top: 200px;\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\nmain .message-container {\n  height: 350px;\n  width: 320px;\n  background-color: rgba(0, 0, 0, 0.3);\n}\nmain .message-container h1 {\n  text-align: center;\n  color: #D2E603;\n  font-size: 3rem;\n  font-family: \"Neucha\";\n  font-weight: bold;\n  padding: 1rem;\n}\nmain .message-container button {\n  height: 50px;\n  width: 120px;\n  margin: 40px 30%;\n  background-color: #D2E603;\n  border: none;\n  border-radius: 50px;\n  font-family: \"Neucha\";\n  font-size: 1rem;\n  font-weight: 500;\n  letter-spacing: 0.2rem;\n  cursor: pointer;\n}\n@media (min-width: 800px) {\n  main {\n    justify-content: flex-start;\n    margin-left: 100px;\n  }\n  main .message-container {\n    height: 420px;\n    width: 400px;\n  }\n  main .message-container h1 {\n    font-size: 4rem;\n  }\n  main .message-container button {\n    height: 60px;\n    width: 150px;\n    margin: 40px 30%;\n    font-size: 1.3rem;\n  }\n}", "",{"version":3,"sources":["webpack://./src/style.scss"],"names":[],"mappings":"AAUA;EACI,SAAA;EACA,UAAA;EACA,sBAAA;AATJ;;AAYA;EACI,aAAA;EACA,yDAAA;AATJ;;AAaI;EACI,YAAA;EACA,WAAA;EACA,aAAA;EACA,kBAAA;EACA,sBAAA;EACA,mBAAA;EACA,oCAAA;AAVR;AAYQ;EACI,kBAAA;EACA,UAAA;EACA,WAAA;EACA,cAnCL;EAoCK,qBAnCL;EAoCK,sBAAA;EACA,eAAA;AAVZ;AAaQ;EACI,aAAA;EACA,sBAAA;EACA,kBAAA;EACA,WAAA;EACA,WAAA;EACA,YAAA;EACA,WAAA;AAXZ;AAaY;EACI,WAAA;EACA,eAAA;EACA,WAAA;EACA,yBAtDT;AA2CP;AAcQ;EACI,aAAA;AAZZ;AAcQ;EACI,cAAA;EACA,kBAAA;EACA,YAAA;EACA,WAAA;EACA,eAAA;EACA,oCAAA;AAZZ;AAaY;EACI,qBAAA;EACA,iBAAA;EACA,cAtET;EAuES,qBAtET;EAuES,iBAAA;EACA,iBAAA;AAXhB;AAzDI;EAyEI;IACI,mBAAA;IACA,8BAAA;EAbV;EAeU;IACI,aAAA;EAbd;EAeU;IACI,aAAA;IACA,kBAAA;IACA,WAAA;EAbd;EAec;IACI,qBAAA;IACA,cAAA;IACA,qBA5Fb;IA6Fa,iBAAA;IACA,cA/Fb;IAgGa,eAAA;EAblB;AACF;;AAmBA;EACI,iBAAA;EACA,aAAA;EACA,uBAAA;EACA,mBAAA;AAhBJ;AAiBI;EACI,aAAA;EACA,YAAA;EACA,oCAAA;AAfR;AAiBQ;EACI,kBAAA;EACA,cAnHL;EAoHK,eAAA;EACA,qBApHL;EAqHK,iBAAA;EACA,aAAA;AAfZ;AAkBQ;EACI,YAAA;EACA,YAAA;EACA,gBAAA;EACA,yBA9HL;EA+HK,YAAA;EACA,mBAAA;EACA,qBAhIL;EAiIK,eAAA;EACA,gBAAA;EACA,sBAAA;EACA,eAAA;AAhBZ;AAhHI;EAkGJ;IAkCQ,2BAAA;IACA,kBAAA;EAhBN;EAkBM;IACI,aAAA;IACA,YAAA;EAhBV;EAkBU;IACI,eAAA;EAhBd;EAkBU;IACI,YAAA;IACA,YAAA;IACA,gBAAA;IACA,iBAAA;EAhBd;AACF","sourcesContent":["$text: #D2E603;\r\n$typo: 'Neucha';\r\n$medium: 800px;\r\n\r\n@mixin medium {\r\n    @media(min-width: #{$medium}) {\r\n        @content\r\n    }\r\n}\r\n\r\n* {\r\n    margin: 0;\r\n    padding: 0;\r\n    box-sizing: border-box;\r\n}\r\n\r\n#content {\r\n    height: 100vh;\r\n    background-image: url(../../../images/Banner.png);\r\n}\r\n\r\nheader {\r\n    nav {\r\n        height: 60px;\r\n        width: 100%;\r\n        display: flex;\r\n        position: relative;\r\n        flex-direction: column;\r\n        align-items: center;\r\n        background-color: rgba(0,0,0,.8);\r\n\r\n        h1 {\r\n            position: absolute;\r\n            left: 1rem;\r\n            top: .7rem;\r\n            color: $text;\r\n            font-family: $typo;\r\n            letter-spacing: .6rem;\r\n            font-size: 2rem;\r\n        }\r\n        \r\n        .toggleBtn {\r\n            display: flex;\r\n            flex-direction: column;\r\n            position: absolute;\r\n            right: 1rem;\r\n            top: .8rem;\r\n            height: 25px;\r\n            width: 25px;\r\n\r\n            span {\r\n                height: 3px;\r\n                margin-top: 5px;\r\n                width: 25px;\r\n                background-color: $text;\r\n            }\r\n        }\r\n        .nav-links {\r\n            display: none;\r\n        }\r\n        .nav-links.active {\r\n            display: block;\r\n            position: absolute;\r\n            top: 3.75rem;\r\n            width: 100%;\r\n            text-align: end;\r\n            background-color: rgba(0,0,0,.8);\r\n            li {\r\n                list-style-type: none;\r\n                margin: 20px 20px;\r\n                color: $text;\r\n                font-family: $typo;\r\n                font-size: 1.3rem;\r\n                font-weight: bold;\r\n            }\r\n        }\r\n    }\r\n    @include medium {\r\n        nav {\r\n            flex-direction: row;\r\n            justify-content: space-between;\r\n\r\n            .toggleBtn {\r\n                display: none;\r\n            }\r\n            .nav-links {\r\n                display: flex;\r\n                position: absolute;\r\n                right: 1rem;\r\n                \r\n                li {\r\n                    list-style-type: none;\r\n                    margin: 0 10px;\r\n                    font-family: $typo;\r\n                    font-size: 1.3rem;\r\n                    color: $text;\r\n                    cursor: pointer;\r\n                }\r\n            }\r\n        }\r\n    }\r\n}\r\n\r\nmain {\r\n    margin-top: 200px;\r\n    display: flex;\r\n    justify-content: center;\r\n    align-items: center;\r\n    .message-container {\r\n        height: 350px;\r\n        width: 320px;\r\n        background-color: rgba(0,0,0,.3);\r\n\r\n        h1 {\r\n            text-align: center;\r\n            color: $text;\r\n            font-size: 3rem;\r\n            font-family: $typo;\r\n            font-weight: bold;\r\n            padding: 1rem;\r\n        }\r\n\r\n        button {\r\n            height: 50px;\r\n            width: 120px;\r\n            margin: 40px 30%;\r\n            background-color: $text;\r\n            border: none;\r\n            border-radius: 50px;\r\n            font-family: $typo;\r\n            font-size: 1rem;\r\n            font-weight: 500;\r\n            letter-spacing: .2rem;\r\n            cursor: pointer;\r\n        }\r\n    }\r\n    @include medium {\r\n        justify-content: flex-start;\r\n        margin-left: 100px;\r\n\r\n        .message-container {\r\n            height: 420px;\r\n            width: 400px;\r\n\r\n            h1 {\r\n                font-size: 4rem;\r\n            }\r\n            button {\r\n                height: 60px;\r\n                width: 150px;\r\n                margin: 40px 30%;\r\n                font-size: 1.3rem;\r\n            }\r\n        }\r\n    }\r\n}"],"sourceRoot":""}]);
 // Exports
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (___CSS_LOADER_EXPORT___);
 
@@ -144,6 +149,48 @@ module.exports = function cssWithMappingToString(item) {
   }
 
   return [content].join("\n");
+};
+
+/***/ }),
+
+/***/ "./node_modules/css-loader/dist/runtime/getUrl.js":
+/*!********************************************************!*\
+  !*** ./node_modules/css-loader/dist/runtime/getUrl.js ***!
+  \********************************************************/
+/***/ ((module) => {
+
+
+
+module.exports = function (url, options) {
+  if (!options) {
+    // eslint-disable-next-line no-param-reassign
+    options = {};
+  }
+
+  if (!url) {
+    return url;
+  } // eslint-disable-next-line no-underscore-dangle, no-param-reassign
+
+
+  url = String(url.__esModule ? url.default : url); // If url is already wrapped in quotes, remove them
+
+  if (/^['"].*['"]$/.test(url)) {
+    // eslint-disable-next-line no-param-reassign
+    url = url.slice(1, -1);
+  }
+
+  if (options.hash) {
+    // eslint-disable-next-line no-param-reassign
+    url += options.hash;
+  } // Should url be wrapped?
+  // See https://drafts.csswg.org/css-values-3/#urls
+
+
+  if (/["'() \t\n]|(%20)/.test(url) || options.needQuotes) {
+    return "\"".concat(url.replace(/"/g, '\\"').replace(/\n/g, "\\n"), "\"");
+  }
+
+  return url;
 };
 
 /***/ }),
@@ -477,6 +524,97 @@ function styleTagTransform(css, style) {
 
 module.exports = styleTagTransform;
 
+/***/ }),
+
+/***/ "./src/landing.js":
+/*!************************!*\
+  !*** ./src/landing.js ***!
+  \************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "initialize": () => (/* binding */ initialize)
+/* harmony export */ });
+function headerCreator() {
+    const header = document.createElement('header');
+    header.appendChild(navCreator());
+    return header;
+}
+
+function navCreator() {
+    const nav = document.createElement('nav');
+
+    const brandTitle = document.createElement('h1');
+    brandTitle.textContent = 'VEGGIE';
+
+    const navList = document.createElement('ul');
+    navList.className = 'nav-links'
+    multipleElements(navList, 'li', 3);
+    const home = navList.childNodes[0];
+    const menu = navList.childNodes[1];
+    const contact = navList.childNodes[2];
+    home.textContent = 'Home';
+    menu.textContent = 'Menu';
+    contact.textContent = 'Contact';
+
+    const toggleBtn = document.createElement('div');
+    toggleBtn.className = 'toggleBtn';
+    multipleElements(toggleBtn,'span', 3);
+    toggleBtn.addEventListener('click', () => {
+        navList.classList.toggle('active');
+    })
+
+    nav.appendChild(brandTitle);
+    nav.appendChild(toggleBtn);
+    nav.appendChild(navList);
+
+    return nav   
+}
+
+function mainCreator() {
+    const main = document.createElement('main');
+
+    const messageContainer = document.createElement('div');
+    messageContainer.className = 'message-container';
+
+    const message = document.createElement('h1');
+    message.textContent = 'TRY THE BEST VEGAN FOOD IN THE CITY';
+
+    const button = document.createElement('button');
+    button.textContent = 'Order Now!';
+
+    main.appendChild(messageContainer);
+    messageContainer.appendChild(message);
+    messageContainer.appendChild(button);
+
+    return main;
+}
+
+function multipleElements(parent, element, number) {
+    for(let i = 0; i < number; i++) {
+        parent.appendChild(document.createElement(`${element}`))
+    }
+}
+
+function initialize() {
+    const mainTag = document.getElementById('content');
+    mainTag.appendChild(headerCreator());
+    mainTag.appendChild(mainCreator());
+}
+
+
+
+/***/ }),
+
+/***/ "../../images/Banner.png":
+/*!*******************************!*\
+  !*** ../../images/Banner.png ***!
+  \*******************************/
+/***/ ((module, __unused_webpack_exports, __webpack_require__) => {
+
+module.exports = __webpack_require__.p + "84073e2c68cfe3671aef.png";
+
 /***/ })
 
 /******/ 	});
@@ -505,6 +643,9 @@ module.exports = styleTagTransform;
 /******/ 		return module.exports;
 /******/ 	}
 /******/ 	
+/******/ 	// expose the modules object (__webpack_modules__)
+/******/ 	__webpack_require__.m = __webpack_modules__;
+/******/ 	
 /************************************************************************/
 /******/ 	/* webpack/runtime/compat get default export */
 /******/ 	(() => {
@@ -530,6 +671,18 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/global */
+/******/ 	(() => {
+/******/ 		__webpack_require__.g = (function() {
+/******/ 			if (typeof globalThis === 'object') return globalThis;
+/******/ 			try {
+/******/ 				return this || new Function('return this')();
+/******/ 			} catch (e) {
+/******/ 				if (typeof window === 'object') return window;
+/******/ 			}
+/******/ 		})();
+/******/ 	})();
+/******/ 	
 /******/ 	/* webpack/runtime/hasOwnProperty shorthand */
 /******/ 	(() => {
 /******/ 		__webpack_require__.o = (obj, prop) => (Object.prototype.hasOwnProperty.call(obj, prop))
@@ -546,6 +699,52 @@ module.exports = styleTagTransform;
 /******/ 		};
 /******/ 	})();
 /******/ 	
+/******/ 	/* webpack/runtime/publicPath */
+/******/ 	(() => {
+/******/ 		var scriptUrl;
+/******/ 		if (__webpack_require__.g.importScripts) scriptUrl = __webpack_require__.g.location + "";
+/******/ 		var document = __webpack_require__.g.document;
+/******/ 		if (!scriptUrl && document) {
+/******/ 			if (document.currentScript)
+/******/ 				scriptUrl = document.currentScript.src
+/******/ 			if (!scriptUrl) {
+/******/ 				var scripts = document.getElementsByTagName("script");
+/******/ 				if(scripts.length) scriptUrl = scripts[scripts.length - 1].src
+/******/ 			}
+/******/ 		}
+/******/ 		// When supporting browsers where an automatic publicPath is not supported you must specify an output.publicPath manually via configuration
+/******/ 		// or pass an empty string ("") and set the __webpack_public_path__ variable from your code to use your own logic.
+/******/ 		if (!scriptUrl) throw new Error("Automatic publicPath is not supported in this browser");
+/******/ 		scriptUrl = scriptUrl.replace(/#.*$/, "").replace(/\?.*$/, "").replace(/\/[^\/]+$/, "/");
+/******/ 		__webpack_require__.p = scriptUrl;
+/******/ 	})();
+/******/ 	
+/******/ 	/* webpack/runtime/jsonp chunk loading */
+/******/ 	(() => {
+/******/ 		__webpack_require__.b = document.baseURI || self.location.href;
+/******/ 		
+/******/ 		// object to store loaded and loading chunks
+/******/ 		// undefined = chunk not loaded, null = chunk preloaded/prefetched
+/******/ 		// [resolve, reject, Promise] = chunk loading, 0 = chunk loaded
+/******/ 		var installedChunks = {
+/******/ 			"main": 0
+/******/ 		};
+/******/ 		
+/******/ 		// no chunk on demand loading
+/******/ 		
+/******/ 		// no prefetching
+/******/ 		
+/******/ 		// no preloaded
+/******/ 		
+/******/ 		// no HMR
+/******/ 		
+/******/ 		// no HMR manifest
+/******/ 		
+/******/ 		// no on chunks loaded
+/******/ 		
+/******/ 		// no jsonp function
+/******/ 	})();
+/******/ 	
 /************************************************************************/
 var __webpack_exports__ = {};
 // This entry need to be wrapped in an IIFE because it need to be isolated against other modules in the chunk.
@@ -555,9 +754,12 @@ var __webpack_exports__ = {};
   \**********************/
 __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _style_scss__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.scss */ "./src/style.scss");
+/* harmony import */ var _landing_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./landing.js */ "./src/landing.js");
 
 
-console.log('Hola');
+
+(0,_landing_js__WEBPACK_IMPORTED_MODULE_1__.initialize)();
+
 })();
 
 /******/ })()
