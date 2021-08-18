@@ -1,3 +1,6 @@
+import {menuCreator} from './menu'
+import {contactCreator} from './contact'
+
 function headerCreator() {
     const header = document.createElement('header');
     header.appendChild(navCreator());
@@ -11,7 +14,7 @@ function navCreator() {
     brandTitle.textContent = 'VEGGIE';
 
     const navList = document.createElement('ul');
-    navList.className = 'nav-links'
+    navList.className = 'nav-links';
     multipleElements(navList, 'li', 3);
     const home = navList.childNodes[0];
     const menu = navList.childNodes[1];
@@ -19,6 +22,13 @@ function navCreator() {
     home.textContent = 'Home';
     menu.textContent = 'Menu';
     contact.textContent = 'Contact';
+
+    contact.addEventListener('click', () => {
+        contactCreator();
+    })
+    menu.addEventListener('click', () => {
+        menuCreator();
+    })
 
     const toggleBtn = document.createElement('div');
     toggleBtn.className = 'toggleBtn';
@@ -31,11 +41,13 @@ function navCreator() {
     nav.appendChild(toggleBtn);
     nav.appendChild(navList);
 
+
     return nav   
 }
 
 function mainCreator() {
     const main = document.createElement('main');
+    main.className = 'main-container';
 
     const messageContainer = document.createElement('div');
     messageContainer.className = 'message-container';
@@ -44,7 +56,11 @@ function mainCreator() {
     message.textContent = 'TRY THE BEST VEGAN FOOD IN THE CITY';
 
     const button = document.createElement('button');
+    button.className = 'order-button'
     button.textContent = 'Order Now!';
+    button.addEventListener('click', () => {
+        menuCreator();
+    })
 
     main.appendChild(messageContainer);
     messageContainer.appendChild(message);

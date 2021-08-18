@@ -1,6 +1,10 @@
 $text: #D2E603;
+$box-color: rgba(0,0,0,.8); 
+
 $typo: 'Neucha';
+
 $medium: 800px;
+
 
 @mixin medium {
     @media(min-width: #{$medium}) {
@@ -15,8 +19,8 @@ $medium: 800px;
 }
 
 #content {
-    height: 100vh;
-    background-image: url(../../../images/Banner.png);
+    min-height: 100vh;
+    background-image: url(../dist/images/background.png);
 }
 
 header {
@@ -27,7 +31,7 @@ header {
         position: relative;
         flex-direction: column;
         align-items: center;
-        background-color: rgba(0,0,0,.8);
+        background-color: $box-color;
 
         h1 {
             position: absolute;
@@ -64,7 +68,7 @@ header {
             top: 3.75rem;
             width: 100%;
             text-align: end;
-            background-color: rgba(0,0,0,.8);
+            background-color: $box-color;
             li {
                 list-style-type: none;
                 margin: 20px 20px;
@@ -134,13 +138,72 @@ main {
             cursor: pointer;
         }
     }
+    .menu-container {
+        height: 1700px;
+        width: 320px;
+        margin-bottom: 40px;
+        background-color: $box-color;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(6, 1fr);
+        
+        .restaurant-element {
+            height: 250px;
+            width: 250px;
+            margin: auto;
+            display: flex;
+            background-color: rgba(0,0,0,.3);
+            flex-direction: column;
+            align-items: center;
+            margin-bottom: 20px;
+            cursor: pointer;
+
+            .image {
+                height: 150px;
+                width: 150px;
+                margin-top: 20px;
+            }
+            span {
+                font-family: 'DM Sans';
+                padding-top: .3rem;
+                font-size: 1rem;
+                color: $text;
+            }
+        }
+        .restaurant-element:hover {
+            background-color: rgba(0,0,0,.7);
+        }
+    }
+    .contact-container {
+        height: 400px;
+        width: 320px;
+        background-color: rgba(0,0,0,.3);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        span {
+            font-size: 1.5rem;
+            font-family: 'DM Sans';
+            color: $text;
+            padding: .6rem;
+        }
+
+        img {
+            height: 250px;
+            width: 300px;
+        }
+
+    }
     @include medium {
         justify-content: flex-start;
-        margin-left: 100px;
-
+        margin-top: 0px;
+        
         .message-container {
+            margin-top: 40px;
             height: 420px;
             width: 400px;
+            margin-left: 100px;
 
             h1 {
                 font-size: 4rem;
@@ -151,6 +214,30 @@ main {
                 margin: 40px 30%;
                 font-size: 1.3rem;
             }
+        }
+        .menu-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: repeat(2, 1fr);
+            height: 570px;
+            width: 900px;
+            margin: 40px auto 40px auto;
+            
+            .restaurant-element {
+                margin: 0 20px 20px 20px;
+            }
+        }
+        .contact-container {
+            margin: 40px auto 0 auto;
+            height: 550px;
+            width: 550px;
+    
+            img {
+                margin-top: 20px;
+                height: 400px;
+                width: 500px;
+            }
+    
         }
     }
 }
